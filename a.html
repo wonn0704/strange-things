@@ -1,0 +1,28 @@
+<div class="">
+  <SPAN id="gocoder_typing">
+
+</div>
+
+</span>
+
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://www.cssscript.com/demo/simple-typewriter-effect-pure-javascript-typewriterjs/typewriter.js"></script>
+
+<script>
+
+var typing = document.getElementById('gocoder_typing');
+
+var typewriter = new Typewriter(typing, {
+    loop: true
+});
+
+typewriter.typeString('GoCoder')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('IT Express')
+    .pauseFor(2500)
+    .deleteChars(7)
+    .typeString('GoCoder.Net')
+    .start();
+</script>

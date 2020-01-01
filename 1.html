@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style screen="media">
+  html
+  {
+    width: 1400px;
+    margin:auto;
+    display:block;
+    margin-bottom:80px;
+    font-weight:bold;
+    background: black;
+    color: #ECF0F1;
+
+  }
+
+  .topbar
+  {
+    width: 1370px;
+    height: 40px;
+    margin:auto;
+    margin-top:40px;
+    padding-top:20px;
+    text-align: center;
+    font-size: 23px;
+    /* border: solid 1px; */
+    /* border-color: red; */
+  }
+
+  a.home
+  {
+    text-decoration: none;
+    color: red;
+    float: left;
+  }
+
+  a.menu
+  {
+    text-decoration: none;
+    color: #ECF0F1;
+    margin-left:30px;
+    float: right;
+  }
+
+  .menu1
+  {
+    color: #ECF0F1;
+    text-decoration: none;
+    margin-left:30px;
+    float: right;
+
+  }
+
+
+  .moviename
+  {
+    margin:auto;
+    width:400px;
+    height:220px;
+    margin-top:150px;
+    line-height:90%;
+    letter-spacing:-1.5px;
+    font-size:160px;
+    font-weight:bold;
+    float:left;
+    /* border: solid 1px; */
+    /* border-color: red; */
+
+  }
+
+  .moviename:hover
+  {color: red;}
+
+  .bestimg
+  {
+    margin:auto;
+    /* border:solid 1px; */
+    /* border-color: red; */
+    width:700px;
+    height:500px;
+    margin-top:160px;
+    float:right;
+    background:red;
+
+  }
+
+  img
+  {
+    width: 700px;
+    height: 500px;
+  }
+
+  .bottom
+  {
+    float: left;
+  }
+
+  .seasonname
+  {
+    margin-top : 150px;
+    font-size: 30px;
+    color:  #ECF0F1;
+    /* border: solid 1px; */
+    /* border-color: red; */
+
+  }
+
+  .synopsis
+  {
+    width:600px;
+    margin-top: 20px;
+    color: #B3B6B7;
+    font-weight: lighter;
+    /* border: solid 1px; */
+    /* border-color: red; */
+  }
+
+  hr
+  {
+    color: white;
+    width: 70px;
+    border: solid 2px;
+    margin-top: 130px;
+    float: left;
+  }
+
+</style>
+
+<script type="text/javascript">
+
+var seasonInfo1 = {
+  img: "1.jpeg", // 이미지
+  seasonName: "제1장 : 윌 바이어스의 실종", // 시즌명
+  seasonDescription: "친구네 집에서 자신으 ㅣ집으로 돌아가던 중 윌은 무언가 이상한 것을 보게 되고, 윌이 있는 곳에서 가까운 정부의 비밀 실험실에서는 끔찍한 일이 벌어진다." // 시즌 줄거리
+}
+
+var seasonInfo2 = {
+  img: "2.jpeg", // 이미지
+  seasonName: "제2장 : 메이플가의 이상한 아이", // 시즌명
+  seasonDescription: "루카스와 마이크, 더스틴은 숲속에서 한 소녀를 만나고, 호퍼는 조이스에게서 이상한 전화 통화에 대한 이야기를 듣는다." // 시즌 줄거리
+}
+
+var seasonInfo3 = {
+  img: "3.jpeg", // 이미지
+  seasonName: "제3장 : 홀리,졸리", // 시즌명
+  seasonDescription: "바버라가 걱정된 낸시는 혼자 바버라의 행방을 알아보려다 조나단 역시 그녀와 비슷한 상황임을 알게 되고, 조이스는 윌과 접촉할 방법을 강구한다." // 시즌 줄거리
+}
+
+var seasonInfo4 = {
+  img: "4.jpeg", // 이미지
+  seasonName: "제4장 : 시체", // 시즌명
+  seasonDescription: "윌의 죽음을 인정할 수 없는 조이스는 윌을 찾는 것을 포기하지 않는다. 소년들은 일레븐을 보통 소녀처럼 꾸며 위장하고, 낸시와 조나단은 서로 힘을 합친다." // 시즌 줄거리
+}
+
+var seasonInfo5 = {
+  img: "5.jpeg", // 이미지
+  seasonName: "제5장 : 벼룩과 곡예사", // 시즌명
+  seasonDescription: "낸시와 조나단이 윌을 데려간 존재와 대면하는 동안 호퍼는 정부의 비밀 실험실에 잠입한다. 소년들은 클락 선생에게 다른 차원으로 여행하는 방법을 물어본다." // 시즌 줄거리
+}
+
+var seasonInfo6 = {
+  img: "6.jpeg", // 이미지
+  seasonName: "제6장 : 괴물", // 시즌명
+  seasonDescription: "낸시가 사라지자 조나단은 그녀를 찾으려고 애쓰고, 스티브 또한 낸시를 애타게 찾는다. 호퍼와 조이스는 정부의 비밀 실험에 대한 진실에 다가선다." // 시즌 줄거리
+}
+
+var seasonInfo7 = {
+  img: "7.jpeg", // 이미지
+  seasonName: "제7장 : 욕조", // 시즌명
+  seasonDescription: "일레븐은 윌과 접촉하려 애쓰고, 루카스는 나쁜사람들이 오고 있음을 알아차린다. 낸시와 조나단은 경찰에게 조나단의 카메라에 찍힌 사진을 보여준다." // 시즌 줄거리
+}
+
+var seasonInfo8 = {
+  img: "8.jpeg", // 이미지
+  seasonName: "제8장 : 뒤집힌 곳", // 시즌명
+  seasonDescription: "브레너 박사는 호퍼와 조이스를 감금해 심문하고, 소년들은 일레븐과 함께 학교 체육관에 숨는다. 낸시와 조나단은 윌을 데려간 존재에 맞서 싸울 계획을 세운다." // 시즌 줄거리
+}
+  state = 0;
+
+  function changeImage(){
+
+    // state가 a가 참일 경우 괄호 안의 state 값 b를 찾아감
+    // 순서가 왜 이렇게 되는지 교수님께 여쭤보기
+    // 이미지를 천천히 넘어가는 효과를 주고싶은데 도대체 어디에 둬야할지 모르겠음 질문하기
+    // 이미지 클릭 시 div도 같이 바뀌어야 하는데 방법을 못 찾겠음 교수님께 여쭤보기
+
+    if ( state == 0){
+      state = 2;
+      document.getElementById('img').src = seasonInfo2.img;
+      document.getElementById('seasonname').innerHTML = seasonInfo2.seasonName;
+      document.getElementById('synopsis').innerHTML = seasonInfo2.seasonDescription;
+      
+    }
+
+    else if ( state == 2) {
+      state = 1;
+      document.getElementById('img').src = "3.jpg";
+      document.getElementById('seasonname').innerHTML = seasonInfo3.seasonName;
+      document.getElementById('synopsis').innerHTML = seasonInfo3.seasonDescription;
+      
+    }
+
+    else if ( state == 1) {
+      state = 3;
+      document.getElementById('img').src = "4.jpg";
+      document.getElementById('seasonname').innerHTML = seasonInfo4.seasonName;
+      document.getElementById('synopsis').innerHTML = seasonInfo4.seasonDescription;
+    }
+
+    else if ( state == 3) {
+      state = 4;
+      document.getElementById('img').src = "5.jpg";
+      document.getElementById('seasonname').innerHTML = seasonInfo5.seasonName;
+      document.getElementById('synopsis').innerHTML = seasonInfo5.seasonDescription;
+    }
+
+    else if ( state == 4) {
+      state = 5;
+      document.getElementById('img').src = "6.jpg";
+      document.getElementById('seasonname').innerHTML = seasonInfo6.seasonName;
+      document.getElementById('synopsis').innerHTML = seasonInfo6.seasonDescription;
+    }
+
+    else if ( state == 5) {
+      state = 6;
+      document.getElementById('img').src = "7.jpg";
+      document.getElementById('seasonname').innerHTML = seasonInfo7.seasonName;
+      document.getElementById('synopsis').innerHTML = seasonInfo7.seasonDescription;
+    }
+
+    else if ( state == 6) {
+      state = 7;
+      document.getElementById('img').src = "8.jpg";
+      document.getElementById('seasonname').innerHTML = seasonInfo8.seasonName;
+      document.getElementById('synopsis').innerHTML = seasonInfo8.seasonDescription;
+    }
+
+    else {
+      state = 0;
+      document.getElementById('img').src = "1.jpg";
+      document.getElementById('seasonname').innerHTML = seasonInfo1.seasonName;
+      document.getElementById('synopsis').innerHTML = seasonInfo1.seasonDescription;
+    }
+
+  }
+
+
+</script>
+
+<body>
+<div class="topbar">
+    <img class="logo" src="" alt="">
+    <a class="home" href="1.html">
+      HOME
+    </a>
+    <a class="menu" href="2.html">
+      Sound Track
+    </a>
+    <a class="menu1" href="3.html">
+      A Famouse Line
+    </a>
+  </div>
+
+<div class="mobe">
+  <div class="moviename">
+    Stranger
+    <br>
+    Things
+  </div>
+  <div class="bestimg">
+    <img src="1.jpg" id="img" onclick="changeImage()">
+  </div>
+</div>
+
+<div class="bottom">
+  <hr>
+  <div class="seasonname" id="seasonname">
+    제1장 : 윌 바이어스의 실종
+  </div>
+
+  <div class="synopsis" id="synopsis">
+    친구네 집에서 자신으 ㅣ집으로 돌아가던 중 윌은 무언가 이상한 것을 보게 되고, 윌이 있는 곳에서 가까운 정부의 비밀 실험실에서는 끔찍한 일이 벌어진다.
+  </div>
+</div>
+
+</body>
+</html>

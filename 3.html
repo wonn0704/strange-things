@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<style screen="media">
+  html
+  {
+    width: 1400px;
+    margin:auto;
+    display:block;
+    margin-bottom:80px;
+    font-weight:bold;
+    background: black;
+    color: #ECF0F1;
+  }
+
+  body::-webkit-scrollbar
+  {
+    display: none;
+  }
+  /* 스크롤바 숨긴 상태에서 스크롤 가능하게 하기 */
+
+  .topbar
+  {
+    width: 1370px;
+    height: 40px;
+    margin:auto;
+    margin-top:40px;
+    padding-top:20px;
+    text-align: center;
+    font-size: 23px;
+
+    /* border: solid 1px; */
+    /* border-color: red; */
+  }
+
+  a.home
+  {
+    text-decoration: none;
+    color: #ECF0F1;
+    float: left;
+
+  }
+
+  a.menu
+  {
+    color: #ECF0F1;
+    text-decoration: none;
+    margin-left:30px;
+    float: right;
+  }
+
+  .menu1
+  {
+    margin-left:30px;
+    color: red;
+    text-decoration: none;
+    float: right;
+  }
+
+  .Tittle
+  {
+    font-size: 50px;
+    width:400px;
+    margin-top: 150px;
+    /* border: solid 1px; */
+    /* border-color: red; */
+  }
+
+  .afl
+  {
+    margin:auto;
+    width:1400px;
+    margin-top: 20px;
+  }
+    
+  .txtbox
+  {
+    text-align:center;
+    width: 1000px;
+    height:50px;
+    margin:auto;
+    margin-top:30px;
+    padding-top:30px;
+    /* border: solid 1px; */
+    /* border-color: red; */
+  }
+
+  .afl a
+  {
+    font-family: Consolas, monospace;
+    font-size: 180px;
+    margin-left:30px;
+    text-decoration: none;
+    color: #424242;
+    /* border: solid 1px; */
+    /* border-color: red; */
+  }
+
+  a:hover {color: red;}
+</style>
+
+
+
+<body>
+<div class="topbar">
+    <img class="logo" src="" alt="">
+    <a class="home" href="1.html">
+      HOME
+    </a>
+    <a class="menu" href="2.html">
+      Sound Track
+    </a>
+    <a class="menu1" href="3.html">
+      A Famouse Line
+    </a>
+  </div>
+
+<div class="Tittle">
+  <a>
+    A Famouse Line
+  </a>
+</div>
+
+<div class="txtbox">
+  <SPAN id="gocoder_typing">
+</div>
+
+</span>
+
+<div class="afl">
+ <a class="a" href="#" onclick="scriptbox('[Mike] Something is coming. Something hungry for blood. ')">A</a>
+ <a class="b" href="#" onclick="scriptbox('[Will] Hello? Hello??')">B</a>
+ <a class="c" href="#" onclick="scriptbox('[Joys] No, not my Will. He is not like that.')">C</a>
+ <a class="d" href="#" onclick="scriptbox('[Staff] You think you can steal frome me, boy?')">D</a>
+ <a class="e" href="#" onclick="scriptbox('[Joys] Ring-a-ding-ding!')">E</a>
+ <a class="f" href="#" onclick="scriptbox('[Mike] Oh, so you can speak.')">F</a>
+ <a class="g" href="#" onclick="scriptbox('[Mike] Eleven? Is everything okay?')">G</a>
+ <a class="h" href="#" onclick="scriptbox('[Eleven] Friend? What is Friend?')">H</a>
+ <a class="i" href="#" onclick="scriptbox('[Mike] Is someone that youv would do anything for.')">I</a>
+ <a class="j" href="#" onclick="scriptbox('[Hopper] You ever feel cursed?')">J</a>
+ <a class="k" href="#" onclick="scriptbox('[Joys] Is will.. He is trying to talk to me. Will?')">K</a>
+ <a class="l" href="#" onclick="scriptbox('[Nancy] Where is Barb')">L</a>
+ <a class="m" href="#" onclick="scriptbox('[Joys] Will... are you here?')">M</a>
+ <a class="n" href="#" onclick="scriptbox('[Joys] Um, Blink once for yes, twice for no.')">N</a>
+ <a class="o" href="#" onclick="scriptbox('[Will] Right here. RUN.')">O</a>
+ <a class="p" href="#" onclick="scriptbox('[Mike] Will, is that you? It is Mike! Do you copy? Over.')">P</a>
+ <a class="q" href="#" onclick="scriptbox('[laughs]Dude, Troy peed himself.')">Q</a>
+ <a class="r" href="#" onclick="scriptbox('[Will] MOM!')">R</a>
+ <a class="s" href="#" onclick="scriptbox('[Joys] I am HERE!')">S</a>
+ <a class="t" href="#" onclick="scriptbox('[Joys] Listen to me! Iswear I am gonna get to you, okay?')">T</a>
+ <a class="u" href="#" onclick="scriptbox('[Mike] The upside down.')">U</a>
+ <a class="v" href="#" onclick="scriptbox('[Hopper] Do not say anything.')">V</a>
+ <a class="w" href="#" onclick="scriptbox('[Hopper] The body is fake. You are right.')">W</a>
+ <a class="x" href="#" onclick="scriptbox('[Lucas] Find WILL? Where is he, then? Hu? I do not see him.')">X</a>
+ <a class="y" href="#" onclick="scriptbox('[Eleven] Mike.. I am sorry. The gate... I opened it. I am a monster.')">Y</a>
+ <a class="z" href="#" onclick="scriptbox('[Mike] No.No, El, you are not the monster.')">Z</a>
+</div>
+
+</body>
+
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://www.cssscript.com/demo/simple-typewriter-effect-pure-javascript-typewriterjs/typewriter.js"></script>
+
+<script>
+
+var typing = document.getElementById('gocoder_typing');
+
+var typewriter = new Typewriter(typing, {
+    // loop: true
+});
+
+function scriptbox(text) {
+  typewriter.typeString(text)
+    .pauseFor(1000)
+    .deleteAll()
+    // .typeString('IT Express')
+    // .pauseFor(2500)
+    // .deleteChars(7)
+    // .typeString('GoCoder.Net')
+    .start();
+}
+
+</script>
+
+</html>
